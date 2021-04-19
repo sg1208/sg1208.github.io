@@ -3,32 +3,38 @@
 <head>
 <meta charset='utf-8'>
 <style>
-h3 {color: blue;}
+h1 {color:red;}
 p {color: chocolate; line-height: 200%;}
 li {font-size: 20px;}
+body{line-height: 190%;}
 
-.red {color: red;}
-span {font-weight: bold;}
+.red {color:purple;}
+.bold {font-weight: bold;}
 
-#title1 {text-shadow: 2px 2px 10px purple;}
-#title2 {color: green;}
-#tltle3 {color:green}
+
+#title1 {text-shadow: 2px 2px 8px black;}
+#title2 {color:orange; text-decoration: underline;}
+#title3 {color:green; text-decoration: underline;}
+#title4 {text-shadow: 2px 2px 10px purple; color: blue; font-weight: bold;}
 
 </style>
 </head>
 <body>
-<h3 id=title1>제 1회 호서 국제 기타 페스티벌</h3>
-<p>여권, 항공권 등 여행 시 필요한 것만을 준비하고 현지에서 숙박, 식사 등을 해결하는 자유여행을 말합니다.</p>
+    <form action="접수완료.html">
+<h1>제 1회 호서 <span id=title1>국제 기타 페스티벌</span></h1>
+<p><h3><span id=title2>여름밤 천안에서의 기타 페어, 기타 콘서트 및 세미나 참가</h3></span></p>
 
-<h3 class=red>- 배낭여행의 종류</h3>
-<p>배낭여행에는 모든 일정을 자신이 정하는 자유 배낭, 여러 명이 같이 출발 전 숙소와 교통편 등을 미리 예약하고 여행하는 단체 배낭, 자유 배낭과 단체 배낭의 중간 형태인 패키지 배낭여행 등이 있습니다.</p>
+<p><h3><span class=red>클래식 기타</span>의 아름다운 선율을 감상하고 <span class=red>마스터 클래스</span>를 통해 기타실력을 
+    향상할 수 있는 좋은 기회입니다.</h3></p>
 
-<h3 class=red>- 배낭여행 준비</h3>
 <ul>
-    <li><span id=title2>여권 준비</span>: 여권이 없으면 신청하고 여권 유효기간을 반드시 체크.</li>
-    <li><span id=tltle3>비행기 예약</span> : 항공사의 예매 사이트나 예약 대행 사이트 이용.</li>
-    <li><span>여행 스케줄</span> : 스케줄은 가능한 세부적으로 잘 짜야 함.</li>
-    <li><span>짐싸기</span> : 꼭 필요한 물품만으로 최대한 간단하게 짐 준비.</li> 
+    <li><span class=bold>일시</span>: 2021년 07월 15일 ~ 08월 15일</li>
+    <li><span class=bold>장소</span> : <span id=title3>호서대학교 대강당</span></li>
+    <li><span class=bold>주최</span> : 호서대학교 디지털기술경영학과</li>
+    <li><span class=bold>사회</span> : <span id=title4><a href=프로필.html>20180622 최세경</a></span></li>
+    <li><span class=bold>문의사항</span> : <br><textarea rows=10 cols=50></textarea> </li>
+    <input type="submit" value="문의사항 제출"> 
 </ul>
+</form>
 </body>
 </html>
