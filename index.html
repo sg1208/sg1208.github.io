@@ -3,16 +3,82 @@
 <head>
 <meta charset='utf-8'>
 <style>
-table, th, tr, td {
-	border: solid 1px black;
+	.clear{clear: both;}
+
+table, th, tr, td 
+{border: solid 1px black;
 	border-collapse: collapse;
-	padding: 8px;
-}
+	padding: 8px;}
+	
+	header {border: solid 2px gray;
+	color: yellow;
+	background-color: green;
+	text-align: center;
+	width: 800px;
+	margin-left: 350px;}
+
+	nav{margin-left: 190px;
+	margin-top: 30px;
+	font-size: large;
+	border-bottom: solid 2px green;
+	width: 1100px;}
+	
+	section{margin-left: 200px;
+	margin-top: 20px;
+	width: 800px;
+	float: left;}
+
+	aside{float: left;}
+	aside li{list-style-type: none;}
+
+	footer{margin-left: 190px;
+	margin-top: 20px;
+	width: 1100px;
+	border-top: solid 2px green;
+	color: peru}
+
+	#navi li{display: inline;}
+
+	#weather{width: 240px;}
+	#du{width: 240px;
+	margin-top: 40px;}
+
+	#a{background-color: royalblue;}
+	#b{background-color: orangered;}
+	#c{background-color: orchid;}
+	#d{background-color: palegreen;}
+	#e{background-color: lightsalmon;}
+	#f{background-color: yellow;}
+	#g{background-color: goldenrod;}
+	#h{background-color: aqua;}
+	#i{background-color: indianred;}
+	
 </style>
 </head>
 <body>
-<h1>21-1학기 시간표-20180622 최세경</h1>
+	<header>
+		<h1>21-1학기 시간표-20180622 최세경</h1>
+	</header>
 
+<nav>
+	<ul id=navi>
+		<li><a href="회원가입.html">[회원가입]</a></li>
+		<li>ㅣ</li>
+		<li><a href="루바토 펜션.html">[루바토 펜션 안내]</a></li>
+		<li>ㅣ</li>
+		<li><a href="기타 페스티벌.html">[호서 행사 안내]</a></li>
+		<li>ㅣ</li>
+		<li><a href="ex_padding-margin.html">[호서 야간 개장]</a></li>
+		<li>ㅣ</li>
+		<li><a href="sale.html">[세일 안내장]</a></li>
+		<li>ㅣ</li>
+		<li><a href="ex_table.html">[월간일정표]</a></li>
+		<li>ㅣ</li>
+		<li><a href="ex1_inline-block.html">[프로틴 판매 목록]</a></li>
+	</ul>
+</nav>
+
+<section>
 <table>
 	<tr>
 		<th></th>
@@ -37,23 +103,23 @@ table, th, tr, td {
 		<td></td>
 		<td></td>
 		<td></td>
-		<td>웹 프로그래밍</td>
+		<td id="a">웹 프로그래밍</td>
 		<td></td>
 	</tr>
 
 	<tr>
 		<th>2교시<br>10:30~11:20</th>
-		<td rowspan="2">웹 프로그래밍</td>
+		<td rowspan="2" id="a">웹 프로그래밍</td>
 		<td></td>
 		<td></td>
-		<td rowspan="3">경영정보 시스템</td>
+		<td rowspan="3" id="b">경영정보 시스템</td>
 		<td></td>
 	</tr>
 
 	<tr>
 		<th>3교시<br>11:30~12:20</th>
 		<td></td>
-		<td rowspan="2">대학영어회화2</td>
+		<td rowspan="2" id="c">대학영어회화2</td>
 		<td></td>
 	</tr>
 
@@ -67,16 +133,16 @@ table, th, tr, td {
 	<tr>
 		<th>5교시<br>13:30~14:20</th>
 		<td></td>
-		<td rowspan="3">경영통계</td>
-		<td rowspan="2">생활법률</td>
+		<td rowspan="3" id="d">경영통계</td>
+		<td rowspan="2" id="e">생활법률</td>
 		<td></td>
-		<td>채플</td>
+		<td id="f">채플</td>
 	</tr>
 
 	<tr>
 		<th>6교시<br>14:30~15:20</th>
 		<td></td>
-		<td rowspan="2">디지털 콘텐츠<br>비즈니스개론</td>
+		<td rowspan="2" id="g">디지털 콘텐츠<br>비즈니스개론</td>
 		<td></td>
 	</tr>
 
@@ -84,13 +150,13 @@ table, th, tr, td {
 		<th>7교시<br>15:30~16:20</th>
 		<td></td>
 		<td></td>
-		<td>자기이해와 개발1</td>
+		<td id="h">자기이해와 개발1</td>
 	</tr>
 
 	<tr>
 		<th>8교시<br>16:30~17:20</th>
 		<td></td>
-		<td>디지털 콘텐츠<br>비즈니스개론</td>
+		<td id="g">디지털 콘텐츠<br>비즈니스개론</td>
 		<td></td>
 		<td></td>
 		<td></td>
@@ -99,7 +165,7 @@ table, th, tr, td {
 	<tr>
 		<th>9교시<br>17:30~18:20</th>
 		<td></td>
-		<td rowspan="2">공감과 소통</td>
+		<td rowspan="2" id="i">공감과 소통</td>
 		<td></td>
 		<td></td>
 		<td></td>
@@ -113,13 +179,16 @@ table, th, tr, td {
 		<td></td>
 	</tr>
 </table>
-<hr>
-<h3><a href="회원가입.html">[회원가입]</a></h3>
-<h3><a href="루바토 펜션.html">[루바토 펜션 안내]</a></h3>
-<h3><a href="기타 페스티벌.html">[호서 행사 안내]</a></h3>
-<h3><a href="ex_padding-margin.html">[호서 야간 개장]</a></h3>
-<h3><a href="sale.html">[세일 안내장]</a></h3>
-<h3><a href="ex_table.html">[월간일정표]</a></h3>
-<h3><a href="ex1_inline-block.html">[쇼핑몰 판매 목록]</a></h3>
+</section>
+<aside>
+	<ul>
+		<li><img id="weather" src="img/wea.PNG"></li>
+		<li><img id="du" src="img/dust.PNG"></li>
+	</ul>
+</aside>
+<div class="clear"></div>
+<footer>
+	<h3>제 사이트에 오신것을 진심으로 환영합니다! ㅣ 담당자: 최세경 ㅣ 연락처:010-1234-5678 ㅣ 주소: 경기도 용인시 어딘가</h3>
+</footer>
 </body>
 </html>
